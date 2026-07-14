@@ -1,5 +1,5 @@
 # title
-> _**concepts**: #[concept](), #[concept]()_
+> _**concepts**: #[concept](link.to.wiki.page), #[concept](link.to.wiki.page)_
 
 ## examples
 
