@@ -4,7 +4,7 @@
 ## examples
 
 ```python
-print("hello, world!")
+print("hello world!")
 ```
 
-_**relevant links**: <https.www.link.to.page.com>_
+_**relevant links**: <https://www._
