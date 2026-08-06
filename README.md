@@ -2,6 +2,10 @@
 
 Welcome to my learning log! This repository documents my journey exploring **open source development**, **cyber-security**, and everything in between.
 
+## 📚 Wiki
+
+New here? The **[Wiki](wiki/Home.md)** is the front door to this repository. It explains how the logs, concepts, and tags fit together, points you to the [Glossary](wiki/Glossary.md), and walks through [how to add a new entry](wiki/Getting-Started.md).
+
 ## 🎯 About This Project
 
 This is a personal repository where I track my progress, experiments, and discoveries as I dive deeper into:
