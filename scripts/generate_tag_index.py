@@ -43,6 +43,13 @@ def extract_tags_from_file(file_path: str) -> Tuple[List[str], List[str], List[s
         built_ins = list(dict.fromkeys(built_ins))
         regular_tags = list(dict.fromkeys(regular_tags))
         
+        # The regular-tag pattern (#word) also matches the name inside a
+        # built-in like #print(), so #print() lands in both built_ins and
+        # regular_tags. Drop any regular tag whose name was already captured
+        # as a method or built-in to avoid double-counting.
+        reserved = set(methods) | set(built_ins)
+        regular_tags = [tag for tag in regular_tags if tag not in reserved]
+        
         return regular_tags, methods, built_ins
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
